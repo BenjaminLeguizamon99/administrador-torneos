@@ -1,9 +1,9 @@
-module.exports = (sequelize, DataTypes) => {
+export default (sequelize, DataTypes) => {
     const Division = sequelize.define("Division", {
         idDivision: {
             type: DataTypes.INTEGER,
             primaryKey: true,
-            autoincrement: true
+            autoincrement: true,
         },
         descripcion: {
             type: DataTypes.STRING,

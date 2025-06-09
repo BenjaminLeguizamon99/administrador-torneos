@@ -1,9 +1,9 @@
-module.exports = (sequelize, DataTypes) => {
+export default (sequelize, DataTypes) => {
     const Jugador = sequelize.define("Jugador", {
         idJugador: {
             type: DataTypes.INTEGER,
             primaryKey: true,
-            autoIncrement: true
+            autoIncrement: true,
         },
         nombre: {
             type: DataTypes.STRING,

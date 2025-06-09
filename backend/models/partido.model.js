@@ -1,9 +1,9 @@
-module.exports = (sequelize, DataTypes) => {
+export default (sequelize, DataTypes) => {
     const Partido = sequelize.define('Partido', {
         idPartido: {
             type: DataTypes.INTEGER,
             primaryKey: true,
-            autoIncrement: true
+            autoIncrement: true,
         },
         idEquipos: {
             type: DataTypes.INTEGER,
